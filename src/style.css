@@ -1,0 +1,134 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: oklch(27.4% 0.006 286.033);
+}
+
+body {
+    background-color: oklch(96.7% 0.001 286.375);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: white;
+
+    .data-wrapper {
+        padding: 30px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 100px;
+
+        p,
+        a {
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &.organization-name,
+            &.organization-address {
+                width: 300px;
+            }
+
+            &.organization-name {
+                p {
+                    &:first-of-type {
+                        font-size: small;
+                    }
+
+                    &:last-of-type {
+                        font-size: x-large;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            &.organization-address {
+                p {
+                    font-size: small;
+                }
+
+                a {
+                    font-size: x-large;
+                    white-space: nowrap;
+                }
+            }
+
+            &.flag-wrapper {
+                .flag {
+                    width: 76px;
+                    height: 90px;
+                }
+            }
+        }
+    }
+
+    .nav-wrapper {
+        background-color: oklch(27.4% 0.006 286.033);
+        width: 100%;
+        padding: 15px;
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            a {
+                font-size: large;
+                color: oklch(98.5% 0 0);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        background-color: white;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        border-radius: 20px;
+        padding: 40px 60px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                font-size: x-large;
+            }
+        }
+    }
+}
