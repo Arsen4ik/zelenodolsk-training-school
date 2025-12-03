@@ -142,7 +142,7 @@ h2 {
                 gap: 10px;
 
                 li {
-                    font-size: x-large;
+                    font-size: large;
 
                     a {
                         color: oklch(54.6% 0.245 262.881);
@@ -228,6 +228,10 @@ h2 {
                 p,
                 a {
                     width: 100%;
+
+                    &.label {
+                        color: oklch(70.5% 0.015 286.067);
+                    }
                 }
             }
         }
@@ -255,7 +259,7 @@ h2 {
 
         p {
             text-align: center;
-            font-size: x-large;
+            font-size: large;
         }
     }
 }
