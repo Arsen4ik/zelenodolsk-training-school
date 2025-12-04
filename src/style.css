@@ -25,6 +25,11 @@ h2 {
     line-height: 43px;
 }
 
+h3 {
+    font-size: 25px;
+    line-height: 32px;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -64,14 +69,13 @@ h2 {
 
             &.organization-name {
                 p {
-                    &:first-of-type {
-                        font-size: small;
-                    }
+                    font-size: small;
+                }
 
-                    &:last-of-type {
-                        font-size: x-large;
-                        white-space: nowrap;
-                    }
+                h1 {
+                    font-size: x-large;
+                    white-space: nowrap;
+                    font-weight: normal;
                 }
             }
 
@@ -135,24 +139,33 @@ h2 {
         border-radius: 20px;
         padding: 40px 60px;
 
-        &.programms {
-            ul {
+        &.main-information {
+            .block {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
 
-                li {
+                p {
                     font-size: large;
+                }
 
-                    a {
-                        color: oklch(54.6% 0.245 262.881);
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    li {
+                        font-size: large;
+
+                        a {
+                            color: oklch(54.6% 0.245 262.881);
+                        }
                     }
                 }
             }
         }
 
         &.photogallery {
-            align-items: center;
             gap: 40px;
 
             .photo-wrapper {
